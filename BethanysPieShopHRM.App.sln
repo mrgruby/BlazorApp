@@ -14,6 +14,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		.gitignore = .gitignore
 	EndProjectSection
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BethanysPieShopHRM.ComponentsLibrary", "BethanysPieShopHRM.ComponentsLibrary\BethanysPieShopHRM.ComponentsLibrary.csproj", "{F310C591-0741-46CC-8D45-32C9C13CC6E3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -32,6 +34,10 @@ Global
 		{EB977923-7EF5-499A-9143-FBA75BA89F4C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EB977923-7EF5-499A-9143-FBA75BA89F4C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EB977923-7EF5-499A-9143-FBA75BA89F4C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F310C591-0741-46CC-8D45-32C9C13CC6E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F310C591-0741-46CC-8D45-32C9C13CC6E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F310C591-0741-46CC-8D45-32C9C13CC6E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F310C591-0741-46CC-8D45-32C9C13CC6E3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,0 +1,42 @@
+﻿@if (ShowDialog)
+{
+    <div class="modal fade show d-block" id="exampleModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Employee Quick Add</h5>
+                    <button type="button" class="close" @onclick="@Close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <EditForm Model="@Employee" OnValidSubmit="@HandleValidSubmit">
+                        <DataAnnotationsValidator />
+                        <ValidationSummary />
+
+                        <div class="form-group row">
+                            <label for="lastName" class="col-sm-3">Last name: </label>
+                            <InputText id="lastName" @bind-Value="@Employee.LastName" class="form-control col-sm-8" placeholder="Enter last name"></InputText>
+                            <ValidationMessage class="offset-sm-3 col-sm-8" For="@(() => Employee.LastName)" />
+                            @*two way binding*@
+                        </div>
+
+                        <div class="form-group row">
+                            <label for="firstName" class="col-sm-3">First name: </label>
+                            <InputText id="firstName" class="form-control col-sm-8" @bind-Value="@Employee.FirstName" placeholder="Enter first name"></InputText>
+                            <ValidationMessage class="offset-sm-3 col-sm-8" For="@(() => Employee.FirstName)" />
+                        </div>
+
+                        <div class="form-group row">
+                            <label for="email" class="col-sm-3">Email: </label>
+                            <InputText id="email" class="form-control col-sm-8" @bind-Value="@Employee.Email" placeholder="Enter email"></InputText>
+                            <ValidationMessage class="offset-sm-3 col-sm-8" For="@(() => Employee.Email)" />
+                        </div>
+                        <button type="submit" class="btn btn-primary edit-btn">Save employee</button>
+                        <a class="btn btn-outline-primary" @onclick="@Close">Close</a>
+                    </EditForm>
+                </div>
+            </div>
+        </div>
+    </div>
+}
